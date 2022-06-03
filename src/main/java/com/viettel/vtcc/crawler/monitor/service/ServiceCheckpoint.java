@@ -2,6 +2,7 @@ package com.viettel.vtcc.crawler.monitor.service;
 
 import com.viettel.vtcc.crawler.monitor.model.ServiceModel;
 import com.viettel.vtcc.crawler.monitor.repository.ServiceRepo;
+import com.viettel.vtcc.crawler.monitor.utils.ConfigurationLoader;
 import lombok.extern.slf4j.Slf4j;
 import okhttp3.*;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,10 +17,14 @@ import java.util.concurrent.TimeUnit;
 public class ServiceCheckpoint {
     @Autowired
     ServiceAlert serviceAlert;
+    private final int TIME_OUT = ConfigurationLoader.getInstance().getAsInteger("timeout.request", 10);
+    private final int INTERVAL_TIME = ConfigurationLoader.getInstance().getAsInteger("time.interval", 10);
+    private final int PERIOD_TIME = ConfigurationLoader.getInstance().getAsInteger("time.period", 30);
+
     private final OkHttpClient client = new OkHttpClient.Builder()
-            .connectTimeout(20, TimeUnit.SECONDS)
-            .writeTimeout(20, TimeUnit.SECONDS)
-            .readTimeout(20, TimeUnit.SECONDS)
+            .connectTimeout(TIME_OUT, TimeUnit.SECONDS)
+            .writeTimeout(TIME_OUT, TimeUnit.SECONDS)
+            .readTimeout(TIME_OUT, TimeUnit.SECONDS)
             .build();
 
     public ServiceCheckpoint() {
@@ -39,7 +44,7 @@ public class ServiceCheckpoint {
             } catch (Exception e) {
                 log.error(e.getMessage(), e);
             }
-        }, 30, 30, TimeUnit.SECONDS);
+        }, INTERVAL_TIME, PERIOD_TIME, TimeUnit.SECONDS);
     }
 
     private boolean isCheckpoint(ServiceModel serviceModel) {

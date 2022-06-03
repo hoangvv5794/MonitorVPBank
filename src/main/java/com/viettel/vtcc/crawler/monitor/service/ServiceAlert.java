@@ -12,6 +12,7 @@ import java.util.concurrent.TimeUnit;
 @Component
 @Slf4j
 public class ServiceAlert {
+    private final int TIME_OUT = ConfigurationLoader.getInstance().getAsInteger("timeout.request", 10);
     private static String BOT_TOKEN = ConfigurationLoader.getInstance().getAsString("bot.token", "");
     private static String GROUP_ID = ConfigurationLoader.getInstance().getAsString("group.id", "");
     private final OkHttpClient client = new OkHttpClient.Builder()
@@ -23,7 +24,7 @@ public class ServiceAlert {
 
     public void sendAlert(ServiceModel serviceModel) {
         try {
-            String data = serviceModel.getService_name();
+            String data = "Service:" + serviceModel.getService_name() + " timeout is over " + TIME_OUT + "s";
             Request getRequest = new Request.Builder()
                     .url(URL_SEND_MSG + data)
                     .build();

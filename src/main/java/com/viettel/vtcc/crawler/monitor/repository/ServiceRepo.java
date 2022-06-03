@@ -17,7 +17,7 @@ import java.util.LinkedHashMap;
 @Slf4j
 public class ServiceRepo {
     public static HashMap<String, ServiceModel> listService = new LinkedHashMap<>();
-    private String FILE_CHECKPOINT = ConfigurationLoader.getInstance().getAsString("file.check", "conf/data_check.json");
+    private String FILE_CHECKPOINT = "data/data-check.json";
 
     public ServiceRepo() {
         try {

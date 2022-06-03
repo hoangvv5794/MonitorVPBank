@@ -10,7 +10,7 @@ import java.util.Properties;
 
 @Slf4j
 public class ConfigurationLoader {
-    private final String FOLDER = "conf/";
+    private final String FOLDER = "data/";
     private List<String> resources = new LinkedList<>();
     private Properties properties = new Properties();
 
