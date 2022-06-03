@@ -1,0 +1,66 @@
+[
+  {
+    "service_id": "chatbox.botplatform.js",
+    "service_name": "chatbox.botplatform.js",
+    "service_method": "GET",
+    "service_api": "https://trolyao.vpbank.com.vn/js/apps/chatbox/chatbox.botplatform.js",
+    "header_request": [
+      {
+        "header_key": "Accept",
+        "header_value": "*/*"
+      },
+      {
+        "header_key": "Accept-Language",
+        "header_value": "en-US,en;q=0.9,vi;q=0.8"
+      },
+      {
+        "header_key": "Cache-Control",
+        "header_value": "no-cache"
+      },
+      {
+        "header_key": "Connection",
+        "header_value": "keep-alive"
+      },
+      {
+        "header_key": "Cookie",
+        "header_value": "_hjSessionUser_2512551=eyJpZCI6ImM4ODAzZjNhLWM3YmMtNTg1ZS04ZWE3LTg4NmQzNDRhOWFjNSIsImNyZWF0ZWQiOjE2Mzk5MDAyODUzNTEsImV4aXN0aW5nIjpmYWxzZX0=; _ga_QY2BY0LWN1=GS1.1.1639900284.1.0.1639900288.56; _ga_L2ERFKQZY4=GS1.1.1640092435.2.0.1640092435.0; _ga_SL5Q4093SE=GS1.1.1640092435.2.1.1640092435.0; _hjSessionUser_982096=eyJpZCI6IjdhNmVkNDQ3LTFjOGMtNTY5ZC1iMjVmLWU2OTdiY2JlMDc0NiIsImNyZWF0ZWQiOjE2Mzk5MDAyNjI0NzEsImV4aXN0aW5nIjp0cnVlfQ==; _ga_RVJ4XCZYHG=GS1.1.1645426158.26.1.1645426872.0; _ga_1QRD3G15FN=GS1.1.1645686976.13.0.1645686976.0; _ga=GA1.3.737753300.1639885571; _hjSessionUser_2768205=eyJpZCI6IjUwNWFlMjhmLWU0MDEtNTZhMC05NTc1LTMzYzBiY2ZlZjMwYSIsImNyZWF0ZWQiOjE2NDkxNzExNjgwMTEsImV4aXN0aW5nIjp0cnVlfQ==; _gid=GA1.3.1486600324.1653887548; _gat_gtag_UA_46568812_1=1; XSRF-TOKEN=eyJpdiI6IlU3bXZsXC9uREVrOGpiYjMxUXBVc05nPT0iLCJ2YWx1ZSI6InErZlwveU5ZSlBubGJJbnluNmhCZlY1QVJQQlh4TkIxc0tOandJbkg0djM0UWdxdFE1NlhuZDBnMkhZRHVxVjlDc0srMStSSFV2OG4zMmY3RUtYdk53dz09IiwibWFjIjoiOTI1NThkYTdkMTA1ZTk5MGU2ZGY3YmI3YjA3MDg1NWNmMDM3ODNjMjhmZDNlYjNlYjBlNjY1MzkxZTg5MDAzOCJ9; laravel_session=eyJpdiI6IkpheXIzMFY0VU00c2piaWhzK1ROTEE9PSIsInZhbHVlIjoiSk5uUVc5Z3R6cDlLRDVUdUNCMFFGMjg1M21qdERGN21FZnNUUlwvVGtGNjNvSndINzcwY3c5bHdRUlhRNk5cL2xJNkE0TVF2M2NNaFwvSmkraHZ0bEFORGc9PSIsIm1hYyI6ImE4MTkwYTBmNjA5NDU1MGY5ZTkzNTc4ZjQ0OWIyYTA3NTQ0ZDI3ZDYwY2VlNTQ3Zjc5N2ZjZThmZGE0N2RiMTQifQ%3D%3D; TS019c420d=01a16eb740240fdbc08d8f70b5526652daf0c8298141e964c80a3d576f8f3d122fd7b9b13782c58d3634085a827322f94119f8c0396a4002f8268194f5e5563f413b4b665ee900520ab82fbc5aa9d59774b915a493981b12fb5b6bf8b74cf02275dcf36470f3c8340f3e06e0fec2a5bda1115bd185; _hjSession_2768205=eyJpZCI6ImVjZTkzNjIxLTQzOTYtNDYxNy04YzkzLTlhMmI3MTcyYTY1MiIsImNyZWF0ZWQiOjE2NTM4ODc1NDgzMDMsImluU2FtcGxlIjp0cnVlfQ==; _hjAbsoluteSessionInProgress=1; AWSALB=c0n87EbzkehWXpA/apPFtmlM4799JkvGuT5zcrMI1V4W1cdJgLdMni4+nu07sz3QsJI+fHeePfLTl6ODj6oFidAlfgNnyednOm4TpJjAzyrNQSTbtvG8AixKz8T0"
+      },
+      {
+        "header_key": "Pragma",
+        "header_value": "no-cache"
+      },
+      {
+        "header_key": "Referer",
+        "header_value": "https://www.vpbank.com.vn/"
+      },
+      {
+        "header_key": "Sec-Fetch-Dest",
+        "header_value": "script"
+      },
+      {
+        "header_key": "Sec-Fetch-Mode",
+        "header_value": "no-cors"
+      },
+      {
+        "header_key": "Sec-Fetch-Site",
+        "header_value": "same-site"
+      },
+      {
+        "header_key": "User-Agent",
+        "header_value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36"
+      },
+      {
+        "header_key": "sec-ch-ua",
+        "header_value": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"101\", \"Google Chrome\";v=\"101\""
+      },
+      {
+        "header_key": "sec-ch-ua-mobile",
+        "header_value": "?0"
+      },
+      {
+        "header_key": "sec-ch-ua-platform",
+        "header_value": "\"Windows\""
+      }
+    ]
+  }
+]
